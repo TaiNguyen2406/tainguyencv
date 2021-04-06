@@ -17,10 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: TaiNguyen2406/tainguyencv@master
       - uses: bacongobbler/azure-blob-storage-upload@v1.1.1
         with:
-          source_dir: ''
+          source_dir: 'dist'
           container_name: '$web'
           connection_string: ${{ secrets.ConnectionString }}
           sync: true
