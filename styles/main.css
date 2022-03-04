@@ -7274,3 +7274,7 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+.pages-build-deployment{
+  display: block;
+  text-align: center;
+}
